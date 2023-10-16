@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools"]  # the build tool to use
+build-backend = "setuptools.build_meta"  # the function to use to build the package
+
+[project]
+name = "momacolors"
+version = "0.0.1"
+dependencies = ["matplotlib"]
+requires-python = ">=3.7"
