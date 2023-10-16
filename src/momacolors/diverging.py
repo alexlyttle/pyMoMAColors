@@ -1,4 +1,4 @@
-from .hex_colors import _hex_colors
+from .colors import colors
 from .utils import plot_cmaps
 from matplotlib.colors import LinearSegmentedColormap
 
@@ -10,7 +10,7 @@ __all__ = [
 
 _cmaps = {}
 for _name in __all__:
-    _cmaps[_name] = LinearSegmentedColormap.from_list(_name, _hex_colors[_name])
+    _cmaps[_name] = colors(_name, interpolate=True)
 
 locals().update(_cmaps)
 

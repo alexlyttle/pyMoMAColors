@@ -1,4 +1,4 @@
-from .hex_colors import _hex_colors
+from .colors import colors
 from .utils import plot_cmaps
 from matplotlib.colors import ListedColormap
 
@@ -33,7 +33,7 @@ __all__ = [
 
 _cmaps = {}
 for _name in __all__:
-    _cmaps[_name] = ListedColormap(_hex_colors[_name], _name)
+    _cmaps[_name] = colors(_name)
 
 locals().update(_cmaps)
 
