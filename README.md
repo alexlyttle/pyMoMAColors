@@ -50,7 +50,7 @@ cmap = moma.sequential.Ernst
 fig, ax = plt.subplots()
 s = ax.scatter(x, y, c=c, cmap=cmap)
 ax.set_xlabel("x")
-ax.set_ylabel("sin(x)")
+ax.set_ylabel("y")
 fig.colorbar(s, label=r"$\sin^2(x)$")
 ```
 
