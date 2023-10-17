@@ -1,3 +1,10 @@
+__all__ = [
+    "_hex_colors",
+    "_sequential",
+    "_diverging",
+    "_colorblind_friendly"
+]
+
 _hex_colors = {
     "Abbott"      : ["#950404", "#e04b28", "#c38961", "#9f5630", "#388f30", "#0f542f", "#007d82", "#004042"],
     "Alkalay1"    : ["#241d1d", "#5b2125", "#8d3431", "#bf542e", "#e9a800"],
@@ -37,43 +44,43 @@ _hex_colors = {
 }
 
 _sequential = {
-        "Alkalay1",
-        "Alkalay2",
-        "Althoff",
-        "Ernst",
-        "Exter",
-        "Flash",
+    "Alkalay1",
+    "Alkalay2",
+    "Althoff",
+    "Ernst",
+    "Exter",
+    "Flash",
 }
 
 _diverging = {
-        "Avedon", 
-        "Kippenberger",
-        "Picabia"
+    "Avedon", 
+    "Kippenberger",
+    "Picabia"
 }
 
 _colorblind_friendly = {
-        "Alkalay1",
-        "Alkalay2",
-        "Althoff",
-        "Andri",
-        "Connors",
-        "Doughton",
-        "Ernst",
-        "Exter",
-        "Flash",
-        "Fritsch",
-        "Kippenberger",
-        "Koons",
-        "Levine2",
-        "Ohchi",
-        "OKeeffe",
-        "Palermo",
-        "Picabia",
-        "Picasso",
-        "Rattner",
-        "Sidhu",
-        "Smith",
-        "ustwo",
-        "VanGogh",
-        "vonHeyl"
+    "Alkalay1",
+    "Alkalay2",
+    "Althoff",
+    "Andri",
+    "Connors",
+    "Doughton",
+    "Ernst",
+    "Exter",
+    "Flash",
+    "Fritsch",
+    "Kippenberger",
+    "Koons",
+    "Levine2",
+    "Ohchi",
+    "OKeeffe",
+    "Palermo",
+    "Picabia",
+    "Picasso",
+    "Rattner",
+    "Sidhu",
+    "Smith",
+    "ustwo",
+    "VanGogh",
+    "vonHeyl"
 }

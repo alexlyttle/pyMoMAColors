@@ -61,5 +61,7 @@ def show_all(n: Optional[int]=None, interpolate: bool=False, reversed: bool=Fals
     names = _compare_names(names, _sequential, sequential)
     names = _compare_names(names, _diverging, diverging)
     names = _compare_names(names, _colorblind_friendly, colorblind_friendly)
-    cmaps = [get_colormap(name, n=n, interpolate=interpolate, reversed=reversed) for name in names]
+    if len(names) == 0:
+        raise ValueError("No colormaps match the specified criteria.")
+    cmaps = [get_colormap(name, n=n, interpolate=interpolate, reversed=reversed) for name in sorted(names)]
     return plot_cmaps(cmaps)
