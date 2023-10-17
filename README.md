@@ -2,6 +2,14 @@
 
 Python implementation of [BlakeRMills/MoMAColors](https://github.com/BlakeRMills/MoMAColors).
 
+```python
+import momacolors as moma
+
+moma.show_all()
+```
+
+![All colormaps](images/colormaps.png)
+
 ## Table of contents
 
 - [Installation](#installation)
@@ -80,23 +88,17 @@ moma.get_colormap("Ernst", interpolate=True)
 
 ### Show colormaps
 
-```python
-import momacolors as moma
-
-moma.show_all()
-```
-
-![All colormaps](images/colormaps.png)
-
 Show only sequential colormaps,
 
 ```python
+import momacolors as moma
+
 moma.show_all(sequential=True)
 ```
 
 ![Sequential colormaps](images/sequential.png)
 
-Show sequential colormaps and interpolate (default is `n = 256` colors),
+Show sequential colormaps and interpolate,
 
 ```python
 moma.show_all(interpolate=True, sequential=True)
@@ -107,7 +109,7 @@ moma.show_all(interpolate=True, sequential=True)
 Show diverging colormaps,
 
 ```python
-moma.show_all(interpolate=True, sequential=True)
+moma.show_all(interpolate=True, diverging=True)
 ```
 
 ![Diverging interpolated colormaps](images/diverging_interpolate.png)
