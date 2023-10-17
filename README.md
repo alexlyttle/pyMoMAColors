@@ -132,6 +132,7 @@ moma.show_all(n=6, interpolate=True, colorblind_friendly=True)
 
 ```python
 import numpy as np
+import matplotlib.pyplot as plt
 import momacolors as moma
 
 x = np.linspace(0, 2*np.pi, 101)
