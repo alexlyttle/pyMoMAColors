@@ -28,6 +28,8 @@ pip install git+https://github.com/alexlyttle/pyMoMAColors.git
 
 ## Usage
 
+This package behaves differently to [BlakeRMills/MoMAColors](https://github.com/BlakeRMills/MoMAColors). Currently, choosing `n` returns a colormap for `colors[:n]` in the chosen palette, meaning the first `n` colors are returned, or the colors repeat. In [BlakeRMills/MoMAColors](https://github.com/BlakeRMills/MoMAColors), `n` selects from the palette in some predefined order if `type="discrete`, or by interpolation if `type="continuous`. In the future, I may add a `colors` function to emulate that of [BlakeRMills/MoMAColors](https://github.com/BlakeRMills/MoMAColors).
+
 ### Get colormaps
 
 To get a colormap, e.g. Abbott
