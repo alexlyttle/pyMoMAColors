@@ -12,9 +12,9 @@ def _check_reversed(name, direction):
 
 
 def get_colors(name: str, n: Optional[int]=None, brew_type: Optional[str]=None, direction: int=1,
-               override_order: bool=False, return_hex: bool=False) -> np.ndarray:
+               override_order: bool=False) -> np.ndarray:
     name, direction = _check_reversed(name, direction)
-    return palettes[name].get_colors(n=n, brew_type=brew_type, direction=direction, override_order=override_order, return_hex=return_hex)
+    return palettes[name].get_colors(n=n, brew_type=brew_type, direction=direction, override_order=override_order)
 
 
 def get_colormap(name: str, n: Optional[int]=None, brew_type: Optional[str]=None, direction: int=1,
