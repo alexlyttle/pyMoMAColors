@@ -2,18 +2,10 @@
 
 Python implementation of [BlakeRMills/MoMAColors](https://github.com/BlakeRMills/MoMAColors).
 
-```python
-import momacolors as moma
-
-moma.show_all()
-```
-
-![All colormaps](images/colormaps.png)
-
-## Table of contents
-
-- [Installation](#installation)
-- [Usage](#usage)
+- [pyMoMAColors](#pymomacolors)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Get colors](#get-colors)
     - [Get colormaps](#get-colormaps)
     - [Show colormaps](#show-colormaps)
     - [Example](#example)
@@ -30,7 +22,11 @@ pip install git+https://github.com/alexlyttle/pyMoMAColors.git
 
 ```python
 import momacolors as moma
+
+moma.show_all()
 ```
+
+![All colormaps](images/colormaps.png)
 
 ### Get colors
 
